@@ -1,0 +1,30 @@
+<h2 class="lobstah fade-in one">Weight Weight, Don't Tell Me...</h2>
+<h3 class="fade-in two">This app is intended to guess your gender based on height and weight</h3>
+	<% if @gender_guess %>
+		<h4 class="fade-in two"><%= @message %></h4>
+		<h2 class="lobstah fade-in three highlight"><%= @gender_guess %></h2>
+		<br>
+		<div class="fade-in four">This app can learn.
+		<br>Help us improve our guesses.</div><br>
+		<%= render :partial => 'layouts/accuracy_check' %>
+
+	<% else %>
+		<br><br>
+		<%= form_tag(guess_index_path, :method => "get", :class=>"fade-in three") do %>
+		  <%= label_tag("What's your height?") %>
+		  <%= text_field_tag(:height, nil, :placeholder => "in inches") %>
+		  <br><br>
+		  <%= label_tag("What's your weight?") %>
+		  <%= text_field_tag(:weight, nil, :placeholder => "in lbs") %>
+ 		 <br><br>
+
+ 				<% if @error_message %>
+					<h3 class="fade-in four highlight"><%= @error_message%></h3>
+				<% end %>
+				
+		  <%= submit_tag nil, :class => "btn", :data => {"wipe"=>"Submit"} %>
+
+		<% end %>
+	<% end %>
+
+

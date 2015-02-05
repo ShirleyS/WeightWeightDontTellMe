@@ -1,0 +1,135 @@
+  html, body{
+  background-color:darkcyan;
+  color: #fff;
+  font-family: "Lato", "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+	padding-top: 30px;
+	text-align: center;
+	
+  }
+
+  .lobstah {
+  color: #fff;
+  font-family: "Lobster";
+  font-size: 45px;
+	}
+
+	.highlight{
+	color:yellow;
+	}
+
+	.btn{
+		margin-top: 3em;
+
+	}
+
+	/*the fade via http://codepen.io/anon/pen/jlfdG*/
+	/* make keyframes that tell the start state and the end state of our object */
+	@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+	@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+	@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+
+	.fade-in {
+	 opacity:0;  /* make things invisible upon start */
+	 -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	 -moz-animation:fadeIn ease-in 1;
+	 animation:fadeIn ease-in 1;
+	 
+	 -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	 -moz-animation-fill-mode:forwards;
+	 animation-fill-mode:forwards;
+	 
+	 -webkit-animation-duration:1s;
+	 -moz-animation-duration:1s;
+	 animation-duration:1s;
+	}
+
+
+	.fade-in.one {
+	-webkit-animation-delay: 0.0s;
+	-moz-animation-delay: 0.0s;
+	animation-delay: 0.0s;
+	}
+
+	.fade-in.two {
+	-webkit-animation-delay: 1.0s;
+	-moz-animation-delay:1.0s;
+	animation-delay: 1.0s;
+	}
+
+	.fade-in.three {
+	-webkit-animation-delay: 2.0s;
+	-moz-animation-delay: 2.0s;
+	animation-delay: 2.0s;
+	}
+
+
+	.fade-in.four{
+	-webkit-animation-delay: 2.6s;
+	-moz-animation-delay: 2.6s;
+	animation-delay: 2.6s;
+	}
+	/* button via http://codepen.io/ftntravis/pen/pvbdWe*/
+
+	$duration: .20;
+	$easing: ease-in-out;
+
+	* {
+	  box-sizing: border-box;
+	}
+
+
+	[data-wipe] {  
+	  display: inline-block;
+	  padding: 12px 18px;
+	  text-decoration: none;
+	  position: relative;
+	  border: 2px solid #445561;
+	  border-radius: 3px;
+	  text-transform: uppercase;
+	  letter-spacing: 0.1em;
+	  text-align: left;
+	  color: #445561;
+	  overflow: hidden;
+
+	  /* TO BE DEBUGGED
+	  &:before, &:after {
+	    content: attr(data-wipe);
+	    padding-top: inherit;
+	    padding-bottom: inherit;
+	    white-space: nowrap;
+	    position: absolute;
+	    top: 0;
+	    overflow: hidden;
+	    color: #F1F1F2;
+	    background: #445561;
+	  }
+	  
+	  &:before {
+	    left: 0;
+	    text-indent: 18px;
+	    width: 0;
+	  }
+	  
+	  &:after {
+	    padding-left: inherit;
+	    padding-right: inherit;
+	    left: 100%;
+	    text-indent: calc(-100% - 36px);
+	    transition: $duration + s $easing;
+	  }
+	  
+	  &:hover {
+	    &:before {
+	      width: 100%;
+	      transition: width $duration + s $easing;
+	    }
+	    
+	    &:after {
+	      left: 0;
+	      text-indent: 0;
+	      transition: 0s $duration + s $easing;
+	    }
+	  }*/
+	}

@@ -1,0 +1,14 @@
+<div class="fade-in four"> 
+	<%= form_for :guess, url: {:action => "create"} do |f| %>
+		<label for="incorrect">
+		<%= f.radio_button :accuracy, "incorrect" %>Not Accurate</label>
+		<label for="correct"> 
+		<%= f.radio_button :accuracy, "correct", { :checked => true } %>Accurate</label>
+		<%= f.hidden_field :height, :value => @query_height %>
+		<%= f.hidden_field :weight, :value => @query_weight %>
+		<%= f.hidden_field :gender, :value => @gender_guess %>
+		<br><br>
+		<%= f.submit "submit", :data => {"wipe"=>"Submit"} %>
+
+	<% end %>
+</div>
