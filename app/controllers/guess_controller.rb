@@ -1,8 +1,5 @@
 class GuessController < ApplicationController
-  	after do
-	  ActiveRecord::Base.clear_active_connections!
-	end
-	
+
 	def index
     if ((params[:height].present?) && (params[:height].to_i != 0) && (params[:weight].to_i != 0))
     	@query_height = params[:height].to_i
