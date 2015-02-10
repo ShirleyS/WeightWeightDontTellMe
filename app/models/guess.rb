@@ -17,29 +17,21 @@ class Guess < ActiveRecord::Base
 		77=>208,78=>214,79=>220,80=>226}
 
 	def self.check_weight_by_height(height, weight)
+		@gender_guess = ["male","female"].sample
 		if height >= 108
-			@message = "Mix up the height and weight fields? You must be: " 
-			@gender_guess = ["male","female"].sample
-		else
-			male_distance = 0
-			female_distance = 0
-			dist_hash = {}
+			@message = "Mix up the height and weight fields? You must be: "
+		else	
 			#just checking in female to see if that height is there
 			if @female_averages.has_key?(height)
 				#take the height check distance from value
-				@female_distance = @female_averages[height] - weight
-				dist_hash["female"] = @female_distance.abs
-
-				@male_distance = @male_averages[height] - weight
-				dist_hash["male"] = @male_distance.abs
-				
+				@dist_hash = {"female" => (@female_averages[height] - weight).abs, 
+							  "male" => (@male_averages[height] - weight).abs}
 				@message = '' 
-				@gender_guess = dist_hash.key(dist_hash.values.min)
+				@gender_guess = @dist_hash.key(@dist_hash.values.min)
 			else
 				#out of current base range.
 				#with more time, I would include an adaptive feature that would incorporate the random guess with the accuracy, and build the additional ranges from there.
-				@message = "Random guess: "  
-				@gender_guess = ["male","female"].sample
+				@message = "Random guess: "
 			end
 		end
 

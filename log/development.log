@@ -32920,3 +32920,985 @@ Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-05 15:16:02 -080
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-05 15:16:02 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-10 13:29:00 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/index.html within layouts/application (4.9ms)
+Completed 200 OK in 4292ms (Views: 4165.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:29:07 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:29:07 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:29:07 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:29:07 -0800
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:29:07 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:29:07 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:29:07 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:29:07 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:29:07 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:29:07 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:29:07 -0800
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=60&weight=120&commit=Submit" for 127.0.0.1 at 2015-02-10 13:29:25 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"60", "weight"=>"120", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 42ms
+
+NameError (undefined local variable or method `dist_hash' for #<Class:0x007fab83945170>):
+  app/models/guess.rb:42:in `check_weight_by_height'
+  app/models/guess.rb:54:in `check_accuracy'
+  app/controllers/guess_controller.rb:8:in `index'
+
+
+  Rendered /Users/SShaw/.rvm/gems/ruby-2.0.0-p576/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/SShaw/.rvm/gems/ruby-2.0.0-p576/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/SShaw/.rvm/gems/ruby-2.0.0-p576/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/SShaw/.rvm/gems/ruby-2.0.0-p576/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (71.0ms)
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=60&weight=120&commit=Submit" for 127.0.0.1 at 2015-02-10 13:30:15 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"60", "weight"=>"120", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 5ms
+
+NameError (undefined local variable or method `dist_hash' for #<Class:0x007fab83bb4f78>):
+  app/models/guess.rb:42:in `check_weight_by_height'
+  app/models/guess.rb:54:in `check_accuracy'
+  app/controllers/guess_controller.rb:8:in `index'
+
+
+  Rendered /Users/SShaw/.rvm/gems/ruby-2.0.0-p576/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/SShaw/.rvm/gems/ruby-2.0.0-p576/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/SShaw/.rvm/gems/ruby-2.0.0-p576/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/SShaw/.rvm/gems/ruby-2.0.0-p576/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.6ms)
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=60&weight=120&commit=Submit" for 127.0.0.1 at 2015-02-10 13:30:44 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"60", "weight"=>"120", "commit"=>"Submit"}
+  [1m[35m (25.4ms)[0m  SELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 't'
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 'f'[0m
+  Rendered layouts/_accuracy_check.html.erb (268.5ms)
+  Rendered guess/index.html within layouts/application (304.5ms)
+Completed 200 OK in 920ms (Views: 452.1ms | ActiveRecord: 26.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:30:45 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:30:45 -0800
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:30:45 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:30:45 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:30:45 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:30:46 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:30:46 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:30:46 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:30:46 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:30:46 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:30:46 -0800
+
+
+Started POST "/guess" for 127.0.0.1 at 2015-02-10 13:31:01 -0800
+Processing by GuessController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mkvtEYsVA3UEwJMxdFXRTPdjceYAchUrGdNVMJdkUos=", "guess"=>{"accuracy"=>"correct", "height"=>"60", "weight"=>"120", "gender"=>"female"}, "commit"=>"submit"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (49.5ms)[0m  [1mINSERT INTO "guesses" ("accuracy", "created_at", "gender", "height", "updated_at", "weight") VALUES (?, ?, ?, ?, ?, ?)[0m  [["accuracy", "t"], ["created_at", "2015-02-10 21:31:01.715942"], ["gender", "female"], ["height", 60], ["updated_at", "2015-02-10 21:31:01.715942"], ["weight", 120]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  Rendered thanks/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 278ms (Views: 174.4ms | ActiveRecord: 53.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:31:02 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:31:02 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:31:02 -0800
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:31:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:02 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:02 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:02 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:02 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:02 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-10 13:31:07 -0800
+Processing by GuessController#index as HTML
+  Rendered guess/index.html within layouts/application (1.1ms)
+Completed 200 OK in 78ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:31:07 -0800
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:31:07 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:07 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:07 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:31:07 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:31:07 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:07 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:07 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:07 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:07 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:07 -0800
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=60&weight=106&commit=Submit" for 127.0.0.1 at 2015-02-10 13:31:18 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"60", "weight"=>"106", "commit"=>"Submit"}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 't'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 'f'
+  Rendered layouts/_accuracy_check.html.erb (1.5ms)
+  Rendered guess/index.html within layouts/application (11.1ms)
+Completed 200 OK in 72ms (Views: 68.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:31:18 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:31:18 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:18 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:31:18 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:18 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:18 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:18 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:18 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:18 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:31:18 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:18 -0800
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=60&weight=106&commit=Submit" for 127.0.0.1 at 2015-02-10 13:31:39 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"60", "weight"=>"106", "commit"=>"Submit"}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 't'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 'f'
+  Rendered layouts/_accuracy_check.html.erb (1.7ms)
+  Rendered guess/index.html within layouts/application (3.3ms)
+Completed 200 OK in 220ms (Views: 216.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:31:40 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:31:40 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:31:40 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:40 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:40 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:40 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:31:40 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:40 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:40 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:40 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:31:40 -0800
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=60&weight=106&commit=Submit" for 127.0.0.1 at 2015-02-10 13:32:19 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"60", "weight"=>"106", "commit"=>"Submit"}
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 't'[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 'f'
+  Rendered layouts/_accuracy_check.html.erb (1.8ms)
+  Rendered guess/index.html within layouts/application (3.2ms)
+Completed 200 OK in 177ms (Views: 153.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:32:19 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:32:20 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:32:20 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:32:20 -0800
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:32:20 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:32:20 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:32:20 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:32:20 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:32:20 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:32:20 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:32:20 -0800
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=60&weight=106&commit=Submit" for 127.0.0.1 at 2015-02-10 13:32:48 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"60", "weight"=>"106", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/Users/SShaw/Desktop/WeightWeightDontTellMe/app/models/guess.rb:32: syntax error, unexpected ';', expecting '}'
+...averages[height] - weight).abs; 
+...                               ^
+/Users/SShaw/Desktop/WeightWeightDontTellMe/app/models/guess.rb:33: syntax error, unexpected =>, expecting keyword_end
+							  "male" => (@male_averages[height] - weight).abs}
+							           ^
+/Users/SShaw/Desktop/WeightWeightDontTellMe/app/models/guess.rb:33: syntax error, unexpected '}', expecting keyword_end):
+  app/models/guess.rb:32: syntax error, unexpected ';', expecting '}'
+  app/models/guess.rb:33: syntax error, unexpected =>, expecting keyword_end
+  app/models/guess.rb:33: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/guess_controller.rb:8:in `index'
+
+
+  Rendered /Users/SShaw/.rvm/gems/ruby-2.0.0-p576/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/SShaw/.rvm/gems/ruby-2.0.0-p576/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/SShaw/.rvm/gems/ruby-2.0.0-p576/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/SShaw/.rvm/gems/ruby-2.0.0-p576/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (48.9ms)
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=60&weight=106&commit=Submit" for 127.0.0.1 at 2015-02-10 13:33:34 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"60", "weight"=>"106", "commit"=>"Submit"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 't'[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 'f'
+  Rendered layouts/_accuracy_check.html.erb (1.8ms)
+  Rendered guess/index.html within layouts/application (3.2ms)
+Completed 200 OK in 199ms (Views: 159.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:33:34 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:33:34 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:33:34 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:33:34 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:33:34 -0800
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:33:34 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:33:34 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:33:34 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:33:34 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:33:34 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:33:34 -0800
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=60&weight=106&commit=Submit" for 127.0.0.1 at 2015-02-10 13:34:44 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"60", "weight"=>"106", "commit"=>"Submit"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 't'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 'f'
+  Rendered layouts/_accuracy_check.html.erb (2.1ms)
+  Rendered guess/index.html within layouts/application (3.7ms)
+Completed 200 OK in 173ms (Views: 150.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:34:45 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:34:46 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:34:46 -0800
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:34:46 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:34:46 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:34:46 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:34:46 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:34:46 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:34:46 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:34:46 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:34:46 -0800
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=60&weight=106&commit=Submit" for 127.0.0.1 at 2015-02-10 13:35:04 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"60", "weight"=>"106", "commit"=>"Submit"}
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 't'[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 'f'
+  Rendered layouts/_accuracy_check.html.erb (1.6ms)
+  Rendered guess/index.html within layouts/application (3.6ms)
+Completed 200 OK in 110ms (Views: 105.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:35:05 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:35:05 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:05 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:35:05 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:05 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:05 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:05 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:35:05 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:05 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:05 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:05 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-10 13:35:22 -0800
+Processing by GuessController#index as HTML
+  Rendered guess/index.html within layouts/application (1.9ms)
+Completed 200 OK in 195ms (Views: 193.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:35:22 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:35:22 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:22 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:22 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:35:22 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:22 -0800
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:35:22 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:22 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:22 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:22 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:22 -0800
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=20&weight=&commit=Submit" for 127.0.0.1 at 2015-02-10 13:35:29 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"20", "weight"=>"", "commit"=>"Submit"}
+  Rendered guess/index.html within layouts/application (1.4ms)
+Completed 200 OK in 259ms (Views: 257.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:35:29 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:29 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:35:29 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:35:29 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:35:29 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:29 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:29 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:29 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:29 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:29 -0800
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=20&weight=100&commit=Submit" for 127.0.0.1 at 2015-02-10 13:35:38 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"20", "weight"=>"100", "commit"=>"Submit"}
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 20 AND "guesses"."accuracy" = 't'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 20 AND "guesses"."accuracy" = 'f'
+  Rendered layouts/_accuracy_check.html.erb (2.4ms)
+  Rendered guess/index.html within layouts/application (4.0ms)
+Completed 200 OK in 213ms (Views: 206.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:35:39 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:39 -0800
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:35:39 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:35:39 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:39 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:39 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:35:39 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:39 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:39 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:39 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:35:39 -0800
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=20&weight=100&commit=Submit" for 127.0.0.1 at 2015-02-10 13:36:54 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"20", "weight"=>"100", "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 20 AND "guesses"."accuracy" = 't'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 20 AND "guesses"."accuracy" = 'f'
+  Rendered layouts/_accuracy_check.html.erb (1.8ms)
+  Rendered guess/index.html within layouts/application (3.4ms)
+Completed 200 OK in 196ms (Views: 188.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:36:54 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:36:54 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:36:54 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:36:54 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:36:55 -0800
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:36:55 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:36:55 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:36:55 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:36:55 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:36:55 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:36:55 -0800
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=20&weight=100&commit=Submit" for 127.0.0.1 at 2015-02-10 13:37:38 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"20", "weight"=>"100", "commit"=>"Submit"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 20 AND "guesses"."accuracy" = 't'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 20 AND "guesses"."accuracy" = 'f'
+  Rendered layouts/_accuracy_check.html.erb (2.0ms)
+  Rendered guess/index.html within layouts/application (3.5ms)
+Completed 200 OK in 137ms (Views: 129.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:37:39 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:37:39 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:37:39 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:39 -0800
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:37:39 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:39 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:39 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:39 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:39 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:39 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:39 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-10 13:37:50 -0800
+Processing by GuessController#index as HTML
+  Rendered guess/index.html within layouts/application (1.0ms)
+Completed 200 OK in 106ms (Views: 104.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:37:50 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:37:50 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:50 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:37:50 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:50 -0800
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:37:50 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:50 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:50 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:50 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:50 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:50 -0800
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=68&weight=200&commit=Submit" for 127.0.0.1 at 2015-02-10 13:37:58 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"68", "weight"=>"200", "commit"=>"Submit"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 68 AND "guesses"."accuracy" = 't'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 68 AND "guesses"."accuracy" = 'f'
+  Rendered layouts/_accuracy_check.html.erb (1.3ms)
+  Rendered guess/index.html within layouts/application (30.6ms)
+Completed 200 OK in 170ms (Views: 166.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:37:58 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:37:58 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:58 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:58 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:58 -0800
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:37:58 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:37:58 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:58 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:58 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:58 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:37:58 -0800
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=90&weight=200&commit=Submit" for 127.0.0.1 at 2015-02-10 13:38:13 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"90", "weight"=>"200", "commit"=>"Submit"}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 90 AND "guesses"."accuracy" = 't'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 90 AND "guesses"."accuracy" = 'f'
+  Rendered layouts/_accuracy_check.html.erb (1.9ms)
+  Rendered guess/index.html within layouts/application (3.7ms)
+Completed 200 OK in 140ms (Views: 135.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:38:14 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:38:14 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:38:14 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:38:14 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:38:14 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:38:14 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:38:14 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:38:14 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:38:14 -0800
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:38:14 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:38:14 -0800
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=200&weight=200&commit=Submit" for 127.0.0.1 at 2015-02-10 13:38:37 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"200", "weight"=>"200", "commit"=>"Submit"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 200 AND "guesses"."accuracy" = 't'[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 200 AND "guesses"."accuracy" = 'f'
+  Rendered layouts/_accuracy_check.html.erb (1.9ms)
+  Rendered guess/index.html within layouts/application (3.7ms)
+Completed 200 OK in 169ms (Views: 164.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:38:37 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:38:37 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:38:37 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:38:37 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:38:37 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:38:37 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:38:37 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:38:37 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:38:37 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:38:37 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:38:37 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-10 13:40:15 -0800
+Processing by GuessController#index as HTML
+  Rendered guess/index.html within layouts/application (1.6ms)
+Completed 200 OK in 134ms (Views: 132.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:40:16 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:40:16 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:16 -0800
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:40:16 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:16 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:40:16 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:16 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:16 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:16 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:16 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:16 -0800
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=60&weight=100&commit=Submit" for 127.0.0.1 at 2015-02-10 13:40:24 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"60", "weight"=>"100", "commit"=>"Submit"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 't'[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 'f'
+  Rendered layouts/_accuracy_check.html.erb (2.0ms)
+  Rendered guess/index.html within layouts/application (3.5ms)
+Completed 200 OK in 229ms (Views: 184.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:40:24 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:40:24 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:24 -0800
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:40:24 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:40:24 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:24 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:24 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:24 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:24 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:24 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:24 -0800
+
+
+Started GET "/guess?utf8=%E2%9C%93&height=60&weight=106&commit=Submit" for 127.0.0.1 at 2015-02-10 13:40:36 -0800
+Processing by GuessController#index as HTML
+  Parameters: {"utf8"=>"✓", "height"=>"60", "weight"=>"106", "commit"=>"Submit"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 't'[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "guesses"  WHERE "guesses"."height" = 60 AND "guesses"."accuracy" = 'f'
+  Rendered layouts/_accuracy_check.html.erb (1.8ms)
+  Rendered guess/index.html within layouts/application (3.4ms)
+Completed 200 OK in 110ms (Views: 104.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/thanks.css?body=1" for 127.0.0.1 at 2015-02-10 13:40:37 -0800
+
+
+Started GET "/assets/guess.css?body=1" for 127.0.0.1 at 2015-02-10 13:40:37 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:37 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 13:40:37 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:37 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-02-10 13:40:37 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:37 -0800
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:37 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:37 -0800
+
+
+Started GET "/assets/guess.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:37 -0800
+
+
+Started GET "/assets/thanks.js?body=1" for 127.0.0.1 at 2015-02-10 13:40:37 -0800
